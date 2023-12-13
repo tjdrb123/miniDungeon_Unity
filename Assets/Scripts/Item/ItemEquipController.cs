@@ -8,6 +8,7 @@ public class ItemEquipController : MonoBehaviour
     public CanvasGroup equipPopUp;
     public CanvasGroup un_equipPopUp;
     public EquipPopUpController equipPopUpController;
+    public Item test;
 
     public void Awake()
     {
@@ -21,13 +22,9 @@ public class ItemEquipController : MonoBehaviour
 
     public void ConfirmButton()
     {
-        //Item currentItem = equipPopUpController.currentItem;
-        //if(equipPopUpController.currentItem == null)
-        Debug.Log(EquipPopUpController.instance.currentItem.itemName + EquipPopUpController.instance.currentItem.isEquip);
-        
         if (equipPopUpController.currentItem != null)
         {
-           // equipPopUpController.currentItem.ToggleEquip();
+            equipPopUpController.currentItem.ToggleEquip();
             InVisible();
         }
     }

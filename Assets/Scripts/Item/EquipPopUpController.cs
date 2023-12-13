@@ -12,13 +12,7 @@ public class EquipPopUpController : MonoBehaviour
 
     public Item currentItem;
     protected string buttonName;
-
-    public static EquipPopUpController instance;
-
-    public void Awake()
-    {
-        instance = this;
-    }
+    
     public void ClickItem()
     {
         buttonName = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
@@ -27,7 +21,6 @@ public class EquipPopUpController : MonoBehaviour
         if (item != null)
         {
             currentItem = item;
-            Debug.Log("currentItem is set: " + currentItem.itemName);
             if (item.isEquip)
             {
                 equipPopUp.alpha = 0f;
