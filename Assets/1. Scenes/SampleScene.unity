@@ -353,6 +353,7 @@ MonoBehaviour:
   itemImage: {fileID: 1416785555}
   equipMark: {fileID: 23297245}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &51262632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1251,7 @@ MonoBehaviour:
   itemImage: {fileID: 569097019}
   equipMark: {fileID: 2117026771}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &237652007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1571,7 @@ MonoBehaviour:
   itemImage: {fileID: 237652009}
   equipMark: {fileID: 1098868274}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &301479709
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,6 +3645,7 @@ MonoBehaviour:
   itemImage: {fileID: 1245984872}
   equipMark: {fileID: 376648191}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &705663904
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,6 +3799,7 @@ MonoBehaviour:
   itemImage: {fileID: 1517418152}
   equipMark: {fileID: 650093371}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &735354748
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,6 +4883,7 @@ MonoBehaviour:
   itemImage: {fileID: 817755333}
   equipMark: {fileID: 1869140543}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &922346319
 GameObject:
   m_ObjectHideFlags: 0
@@ -5108,6 +5114,7 @@ MonoBehaviour:
   itemImage: {fileID: 1570077440}
   equipMark: {fileID: 922346319}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &936309645
 GameObject:
   m_ObjectHideFlags: 0
@@ -6208,6 +6215,7 @@ MonoBehaviour:
   itemImage: {fileID: 2089820704}
   equipMark: {fileID: 366839121}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &1092718891
 GameObject:
   m_ObjectHideFlags: 0
@@ -6361,6 +6369,7 @@ MonoBehaviour:
   itemImage: {fileID: 1880032517}
   equipMark: {fileID: 936309645}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &1098868274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6936,6 +6945,7 @@ MonoBehaviour:
   itemImage: {fileID: 1720132018}
   equipMark: {fileID: 453413034}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &1223677922
 GameObject:
   m_ObjectHideFlags: 0
@@ -7446,6 +7456,7 @@ MonoBehaviour:
   itemImage: {fileID: 1223677924}
   equipMark: {fileID: 1424838173}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &1245984870
 GameObject:
   m_ObjectHideFlags: 0
@@ -7762,7 +7773,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 55
-  m_Sprite: {fileID: 21300000, guid: 2cd1cdde35caa9a45afd316e123f00d5, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7770,7 +7781,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1396194344
@@ -8061,6 +8072,7 @@ MonoBehaviour:
   itemImage: {fileID: 340604462}
   equipMark: {fileID: 1154948107}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &1416785553
 GameObject:
   m_ObjectHideFlags: 0
@@ -8367,6 +8379,7 @@ MonoBehaviour:
   itemImage: {fileID: 1065229464}
   equipMark: {fileID: 811485854}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &1473419214
 GameObject:
   m_ObjectHideFlags: 0
@@ -8404,6 +8417,7 @@ MonoBehaviour:
   itemImage: {fileID: 1492920416}
   equipMark: {fileID: 123774282}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!224 &1473419216
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9487,6 +9501,7 @@ MonoBehaviour:
   itemImage: {fileID: 315113559}
   equipMark: {fileID: 607044597}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &1667855462
 GameObject:
   m_ObjectHideFlags: 0
@@ -10065,6 +10080,7 @@ MonoBehaviour:
   itemImage: {fileID: 735354750}
   equipMark: {fileID: 603697437}
   popEquipImage: {fileID: 426568853}
+  weaponSpriteRenderer: {fileID: 1372023753}
 --- !u!1 &1737875217
 GameObject:
   m_ObjectHideFlags: 0

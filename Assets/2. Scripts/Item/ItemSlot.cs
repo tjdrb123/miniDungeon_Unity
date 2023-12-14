@@ -10,6 +10,7 @@ public class ItemSlot : MonoBehaviour
     public Image itemImage;
     public GameObject equipMark;
     public GameObject popEquipImage;
+    public SpriteRenderer weaponSpriteRenderer;
 
     public void Init(ItemData data)
     {
@@ -25,10 +26,16 @@ public class ItemSlot : MonoBehaviour
         if (itemData.isEquiped)
         {
             equipMark.SetActive(true);
+            Debug.Log(itemData.type + (int)ItemType.weapon);
+            Debug.Log("test" + 0);
+            if(itemData.type == ItemType.weapon)
+                weaponSpriteRenderer.sprite = itemImage.sprite;
         }
         else
         {
             equipMark.SetActive(false);
+            if (itemData.type == ItemType.weapon)
+                weaponSpriteRenderer.sprite = null;
         }
     }
 
@@ -36,6 +43,7 @@ public class ItemSlot : MonoBehaviour
     {
         if (itemImage.enabled == false)
             return;
+        else
         popEquipImage.gameObject.SetActive(true);
         popUpEquip.PopUpSetting(this);
     } 

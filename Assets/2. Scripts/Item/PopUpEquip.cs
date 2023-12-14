@@ -9,6 +9,7 @@ public class PopUpEquip : MonoBehaviour
     //public Sprite weaponSprite;
     public Text popUpText;
     public Button confirmBtn;
+    public SpriteRenderer weaponSpriteRenderer;
 
     public void PopUpSetting(ItemSlot slot)
     {

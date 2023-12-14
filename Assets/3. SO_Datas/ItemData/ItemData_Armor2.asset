@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70949b1a183f750449bbd2217bc1a87a, type: 3}
-  m_Name: ItemData_Amor2
+  m_Name: ItemData_Armor2
   m_EditorClassIdentifier: 
-  itemName: Amor2
+  itemName: Armor2
   price: 5000
   isEquiped: 0
   image: {fileID: 21300000, guid: 2f1eaeeaad36ee5469eff7ff158f37ba, type: 3}
+  type: 1
