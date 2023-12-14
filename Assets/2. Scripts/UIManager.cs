@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] TMP_Text healthTxt;
     [SerializeField] TMP_Text criticalTxt;
 
-    private void Start()
+    private void Update() // Start로 바꾸고 값이 계속 바뀌게끔 수정필요
     {
         goldTxt.text = GameManager.Instance.userData.gold.ToString();
         IdTxt.text = GameManager.Instance.userData.Id;
@@ -41,7 +41,7 @@ public class UIManager : MonoBehaviour
         int sum = 0;
         for (int i = 0; i < myitems.Length; i++)
         {
-            if (myitems[i].type == type)
+            if (myitems[i].type == type && myitems[i].isEquiped)
             {
                 sum += myitems[i].itemStat;
             }
