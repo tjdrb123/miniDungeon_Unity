@@ -13,6 +13,7 @@ public class ItemData : ScriptableObject
 {
     public string itemName;
     public int price;
+    public int itemStat;
     public bool isEquiped;
     public Sprite image;
     public ItemType type;

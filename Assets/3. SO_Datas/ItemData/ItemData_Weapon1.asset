@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Weapon1
   price: 5000
+  itemStat: 40
   isEquiped: 0
   image: {fileID: 21300000, guid: 1e16b3953d0c3c34d8acf753bff5137e, type: 3}
+  type: 0
