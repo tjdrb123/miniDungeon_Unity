@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+using static UnityEditor.Progress;
+
+public class PopUpEquip : MonoBehaviour
+{
+    public Text popUpText;
+    public Button confirmBtn;
+
+    public void PopUpSetting(ItemSlot slot)
+    {
+        if(slot.itemData.isEquiped)
+        {
+            popUpText.text = "장착을 해제 하시겠습니까?";
+            confirmBtn.onClick.RemoveAllListeners();
+            confirmBtn.onClick.AddListener(() => {
+                slot.itemData.isEquiped = false;
+                slot.ToggleEquip();
+            });
+         
+        }
+        else
+        {
+            popUpText.text = "장착 하시겠습니까?";
+            confirmBtn.onClick.AddListener(() => {
+                slot.itemData.isEquiped = true;
+                slot.ToggleEquip();
+            });
+        }
+    }
+}
