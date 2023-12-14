@@ -16,12 +16,12 @@ public class ItemSlot : MonoBehaviour
         itemImage.sprite = data.image;
         itemImage.enabled = true;
 
-        ToggleEquip();
+        ChangeEquip();
     }
 
-    public void ToggleEquip()
+    public void ChangeEquip()
     {
-        if(itemData.isEquiped)
+        if (itemData.isEquiped)
         {
             equipMark.SetActive(true);
         }
@@ -33,6 +33,8 @@ public class ItemSlot : MonoBehaviour
 
     public void PopUp()
     {
-        if(itemData != null) popUpEquip.PopUpSetting(this);
+        if (itemData == null)
+            return;
+        popUpEquip.PopUpSetting(this);
     }
 }

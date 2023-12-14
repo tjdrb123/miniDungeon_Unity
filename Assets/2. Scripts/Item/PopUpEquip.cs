@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class PopUpEquip : MonoBehaviour
 {
@@ -18,7 +17,7 @@ public class PopUpEquip : MonoBehaviour
             confirmBtn.onClick.RemoveAllListeners();
             confirmBtn.onClick.AddListener(() => {
                 slot.itemData.isEquiped = false;
-                slot.ToggleEquip();
+                slot.ChangeEquip();
             });
          
         }
@@ -27,7 +26,7 @@ public class PopUpEquip : MonoBehaviour
             popUpText.text = "장착 하시겠습니까?";
             confirmBtn.onClick.AddListener(() => {
                 slot.itemData.isEquiped = true;
-                slot.ToggleEquip();
+                slot.ChangeEquip();
             });
         }
     }
