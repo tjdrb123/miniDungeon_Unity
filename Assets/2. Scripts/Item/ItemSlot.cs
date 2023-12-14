@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class ItemSlot : MonoBehaviour
 {
     [HideInInspector] public ItemData itemData;
-    public PopUpEquip popUpEquip;
-    public Image itemImage;
-    public GameObject equipMark;
-    public GameObject popEquipImage;
-    public SpriteRenderer weaponSpriteRenderer;
+    [SerializeField] private PopUpEquip popUpEquip;
+    [SerializeField] private Image itemImage;
+    [SerializeField] private GameObject equipMark;
+    [SerializeField] private GameObject popEquipImage;
+    [SerializeField] private SpriteRenderer weaponSpriteRenderer;
 
     public void Init(ItemData data)
     {
@@ -26,8 +26,6 @@ public class ItemSlot : MonoBehaviour
         if (itemData.isEquiped)
         {
             equipMark.SetActive(true);
-            Debug.Log(itemData.type + (int)ItemType.weapon);
-            Debug.Log("test" + 0);
             if(itemData.type == ItemType.weapon)
                 weaponSpriteRenderer.sprite = itemImage.sprite;
         }

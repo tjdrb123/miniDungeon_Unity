@@ -6,10 +6,8 @@ using UnityEngine.UI;
 
 public class PopUpEquip : MonoBehaviour
 {
-    //public Sprite weaponSprite;
-    public Text popUpText;
-    public Button confirmBtn;
-    public SpriteRenderer weaponSpriteRenderer;
+    [SerializeField] private Text popUpText;
+    [SerializeField] private Button confirmBtn;
 
     public void PopUpSetting(ItemSlot slot)
     {

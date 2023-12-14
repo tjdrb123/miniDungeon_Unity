@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    [SerializeField] private ItemSlot[] itemSlots;
     [SerializeField] TMP_Text goldTxt;
     [SerializeField] TMP_Text IdTxt;
     [SerializeField] TMP_Text levelTxt;
@@ -25,9 +26,6 @@ public class UIManager : MonoBehaviour
         healthTxt.text = GameManager.Instance.userData.health.ToString();
         criticalTxt.text = GameManager.Instance.userData.critical.ToString();
     }
-
-    // 인벤토리 열었을 때, 아이템 슬롯에 아이템 정보들이 들어가야함.
-    public ItemSlot[] itemSlots;
 
     public void SetInventory()
     {
