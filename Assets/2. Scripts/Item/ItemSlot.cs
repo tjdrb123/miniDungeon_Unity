@@ -9,6 +9,7 @@ public class ItemSlot : MonoBehaviour
     public PopUpEquip popUpEquip;
     public Image itemImage;
     public GameObject equipMark;
+    public GameObject popEquipImage;
 
     public void Init(ItemData data)
     {
@@ -33,8 +34,9 @@ public class ItemSlot : MonoBehaviour
 
     public void PopUp()
     {
-        if (itemData == null)
+        if (itemImage.enabled == false)
             return;
+        popEquipImage.gameObject.SetActive(true);
         popUpEquip.PopUpSetting(this);
-    }
+    } 
 }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PopUpEquip : MonoBehaviour
 {
+    //public Sprite weaponSprite;
     public Text popUpText;
     public Button confirmBtn;
 
@@ -19,7 +20,6 @@ public class PopUpEquip : MonoBehaviour
                 slot.itemData.isEquiped = false;
                 slot.ChangeEquip();
             });
-         
         }
         else
         {
